@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Details Searching App</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <h2>Search Customer Details</h2>
-        <input type="text">
+    <header class="p-2 text-center border-bottom">
+        <h2 class="m-0">Search Customer Details</h2>
+        <input id="txt-search" class="mt-2 text-center w-75" placeholder="Enter Something to Search" type="text">
+        
     </header>
-    <main>
+    <main class="p-2">
+        <table id="tbl-customers" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>CONTACT</th>
+                    <th>COUNTRY</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        We are sorry, we cannot find any matches for your term
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
 
     </main>
 </body>
